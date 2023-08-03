@@ -1,0 +1,414 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Circe-Bold';
+    src: url('../fonts/Circe-Bold.ttf');
+}
+@font-face {
+    font-family: 'Circe-Light';
+    src: url('../fonts/Circe-Light.ttf');
+}
+@font-face {
+    font-family: 'Circe-Regular';
+    src: url('../fonts/CirceRegular.ttf');
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body{
+    overflow: auto;
+}
+
+main {
+    flex: 1 1 auto;
+    overflow:auto;
+    background: url('../img/bg22.png') center no-repeat, url('../img/bg.jpg') center;
+    background-size: cover;
+    height: 837px;
+}
+
+footer{
+    min-height: 177px;
+    background-color: #1C1C1C;
+    overflow: auto;
+    font-family: 'Circe-Light';
+    font-weight: 350;
+    white-space: nowrap;
+}
+.container {
+    max-width: 315px;
+    margin: 0 auto;
+}
+
+.header{
+    margin-top: 58px;
+    font-family: 'Circe-Regular';
+    font-weight: 350;
+    white-space: nowrap;
+}
+.logo__text{
+    font-size: 12px;
+    line-height: 130%;
+    height: max-content;
+}
+
+.header__flex{
+    display: flex;
+    width: 315px;
+    justify-content: space-between;
+    margin-bottom: 91px;
+}
+.flex{
+    display: flex;
+}
+.mleft{
+    margin-left: 5px;
+    align-self: center;
+}
+.number{
+    font-size: 14px;
+    font-family: 'Circe-Regular';
+    font-weight: 400;
+}
+
+.logo{
+    display: flex;
+}
+
+.ust{
+    font-size: 10px;
+    text-align: center;
+}
+.column>img{
+    width: 40px;
+    height: 30px;
+    margin: 20px 0 10px 0;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 12px;
+}
+.m10{
+    margin: 0 10px 5px 0;
+}
+
+
+.box__text{
+    font-size: 24px;
+    width: 290px;
+    line-height: 110%;
+    font-family: 'Circe-Regular';
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.bold{
+    font-family: 'Circe-Bold';
+    font-weight: 700;
+}
+
+.box__items{
+    display: flex;
+    align-items: center;
+    width: 315px;
+    height: 80px;
+    justify-content: space-around;
+    line-height: 120%;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Circe-Regular";
+    border-radius: 20px;
+    background: rgba(208, 255, 120, 0.20);
+    backdrop-filter: blur(2.5px);
+    margin-bottom: 180px;
+}
+
+.item__svg{
+    margin-bottom: 3px;
+}
+
+.catalog{
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 110%;
+    font-family: "Circe-Regular";
+    font-size: 14px;
+    font-weight: 350;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.catalog__first{
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: "Circe-Bold";
+}
+
+.buttons{
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Circe-Regular";
+}
+
+input{
+    border-radius: 50px;
+    border: 1px solid #1C1C1C;
+    background: #FFF;  
+    padding: 18px 69px;
+    width: 260px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 350;
+    color: black;
+    margin-bottom: 10px;
+}
+
+input::placeholder{
+    font-size: 16px;
+    font-weight: 350;
+    color: black;
+    width: 110%;
+}
+
+button{
+    border-radius: 50px;
+    background: linear-gradient(180deg, #BDF650 0%, #5AC100 100%);
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25), 0px -3px 0px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 17px 46px 19px 47px;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Circe-Bold";
+    margin-bottom: 10px;
+    width: 260px;
+    height: 60px;
+}
+button:hover{
+    background: linear-gradient(180deg, #add169 0%, #54a012 100%);
+}
+
+.text__p{
+    width: max-content;
+    margin: 0 auto;
+}
+
+.p{
+    color: #1C1C1C;
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.underline{
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+}
+.underline::after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    box-shadow: 0 1px 0 0 black;
+}
+.a_d{
+    display: inline;
+}
+.desktop960,
+.desktop{
+    display: none;
+}
+.mobile{
+    display: block;
+}
+
+@media screen and (min-width: 600px) {
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .header__main{
+        font-family: "Circe-Light";
+        font-size: 20px;
+        font-weight: 350;
+    }
+    main{
+        background: none;
+        height: 751px;
+        background: url('../img/bgd2.png') center no-repeat, url('../img/bgd.png') center;
+        background-size: cover;
+    }   
+    footer{
+        min-height: 100px;
+    }
+    .container{
+        /* max-width: 100%; */
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0 7vw;
+    }
+    .header__flex{
+        width: 100%;
+        max-width: 1720px;
+        align-items: center;
+        margin-bottom: 56px;
+    }
+    .header{
+        margin-top: 30px;
+    }
+    .flex__text{
+        font-size: 20px;
+        font-family: "Circe-Light";
+        align-self: center;
+        text-shadow: 1px 1px 2px white, -1px -1px 2px white;
+    }
+    .number{
+        font-size: 22px;
+        font-family: "Circe-Regular";
+        text-shadow: 1px 1px 2px white, -1px -1px 2px white;
+    }
+    .header__number>p{
+        font-size: 20px;
+    }
+    .logo__text{
+        font-size: 20px;
+        font-family: "Circe-Light";
+    }
+    .flex>img,
+    .logo>img{
+        width: 100px;
+        height: 74px;
+    }
+    .call>img{
+        width: 50px;
+        height: 50px;
+    }
+    .flex>img{
+        margin-right: 20px;
+    }
+    .box__text{
+        font-size: 48px;
+        width: 600px;
+    }
+    .box__items{
+        width: 673px;
+        height: 93px;
+        margin-bottom: 35px;
+    }
+    .flex__column{
+        display: flex;
+        font-size: 20px;
+        text-align: start;
+        line-height: 120%; 
+    }
+    .first{
+        width: 52px;
+        height: 49px;   
+    }
+    .second{
+        width: 72px;
+        height: 52px;
+        transform: rotate(21.833deg)
+    }
+    .third{
+        width: 86px;
+        height: 56px;
+    }
+    .catalog{
+        margin: 0 0 20px 0;
+        text-align: start;
+        font-size: 20px;
+    }
+    .buttons{
+        margin: 0 0 24px 0;
+        flex-direction: row;
+    }
+    input{
+        margin-right: 20px;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .text__p, .p{
+        margin: 0;
+        text-align: left;
+    }
+    .p{
+        font-size: 16px;
+    }
+    .catalog__first{
+        margin: 0;
+    }
+    .column{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        font-size: 20px;
+        align-items: center;
+    }
+    .column2{
+        align-self: center;
+    }
+    .center{
+        text-align: center;
+    }
+    .right{
+        text-align: right;
+    }
+    .column2>*{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .column2>*{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .desktop960{
+        display: block;
+    }
+    .column2>*{
+        font-size: 20px;
+    }
+}
